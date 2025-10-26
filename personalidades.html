@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Personalidades - AfroMemória | Grandes nomes da cultura afro-brasileira" />
+    <meta name="keywords" content="personalidades afro-brasileiras, líderes, artistas, intelectuais, ativistas" />
+    <meta name="author" content="AfroMemória" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Personalidades - AfroMemória | Grandes Nomes" />
+    <meta property="og:description"
+        content="Conheça grandes personalidades da cultura afro-brasileira que marcaram nossa história." />
+    <meta property="og:type" content="website" />
+
+    <!-- Favicons modernos -->
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
+
+    <title>Personalidades - AfroMemória | Grandes Nomes</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="AfroMemória" height="50" class="d-inline-block align-top">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu"
+                aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="historia.html">História</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="personalidades.html">Personalidades <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lingua.html">Língua</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sabores.html">Sabores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ritmos.html">Ritmos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="espiritualidade.html">Espiritualidade</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="colabore.html">Colabore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- FIM DA NAVBAR -->
+
+    <div class="container-fluid">
+
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main class="row area">
+            <div class="col-12 bg-light p-4">
+                <div class="container">
+                    <h1 class="mb-4 text-center">Personalidades Afro-Brasileiras</h1>
+                    <p class="lead text-center mb-4">Honrando aqueles que moldaram nossa cultura e história</p>
+
+                    <!-- Controle de Ordenação e Filtro -->
+                    <div class="row justify-content-center mb-4">
+                        <div class="col-md-10 col-lg-8">
+                            <div class="row">
+                                <div class="col-md-6 mb-3 mb-md-0">
+                                    <div class="form-group d-flex align-items-center justify-content-center">
+                                        <label for="sortSelect" class="font-weight-bold mb-0 mr-3">Ordenar por:</label>
+                                        <select id="sortSelect" class="form-control category-filter">
+                                            <option value="birth">Data de Nascimento</option>
+                                            <option value="alphabetical">Ordem Alfabética</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group d-flex align-items-center justify-content-center">
+                                        <label for="categoryFilter"
+                                            class="font-weight-bold mb-0 mr-3">Categoria:</label>
+                                        <select id="categoryFilter" class="form-control category-filter">
+                                            <option value="all">Todas</option>
+                                            <option value="escritor">Escritores</option>
+                                            <option value="musico">Músicos</option>
+                                            <option value="politico">Políticos</option>
+                                            <option value="esportista">Esportistas</option>
+                                            <option value="ator">Atores</option>
+                                            <option value="jornalista">Jornalistas</option>
+                                            <option value="ativista">Ativistas</option>
+                                            <option value="academico">Acadêmicos</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="personalitiesContainer" class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <img src="img/personalidades/zumbi.jpeg" class="card-img-top category-image"
+                                    alt="Zumbi dos Palmares">
+                                <div class="card-body">
+                                    <h5 class="card-title">Zumbi dos Palmares</h5>
+                                    <small class="text-muted">1655 - 1695</small>
+                                    <p class="card-text">Líder do Quilombo dos Palmares, maior símbolo da resistência
+                                        negra no Brasil. Guerreiro que lutou pela liberdade de seu povo.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <img src="img/personalidades/machado_assis.jpg" alt="Machado de Assis"
+                                    class="card-img-top category-image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Machado de Assis</h5>
+                                    <small class="text-muted">1839 - 1908</small>
+                                    <p class="card-text">Maior nome da literatura brasileira, fundador da Academia
+                                        Brasileira de Letras. Autor de obras como "Dom Casmurro" e "Memórias Póstumas de
+                                        Brás Cubas".</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <img src="img/personalidades/andre_reboucas.png" class="card-img-top category-image"
+                                    alt="André Rebouças">
+                                <div class="card-body">
+                                    <h5 class="card-title">André Rebouças</h5>
+                                    <small class="text-muted">1838 - 1898</small>
+                                    <p class="card-text">Engenheiro, inventor e abolicionista. Pioneiro da engenharia no
+                                        Brasil, projetou importantes obras de infraestrutura.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <img src="img/personalidades/cruz_sousa.jpg" class="card-img-top category-image"
+                                    alt="Cruz e Sousa">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cruz e Sousa</h5>
+                                    <small class="text-muted">1861 - 1898</small>
+                                    <p class="card-text">Poeta simbolista catarinense, conhecido como "Cisne Negro".
+                                        Pioneiro do movimento simbolista no Brasil.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <img src="img/personalidades/nilo_pecanha.png" class="card-img-top category-image"
+                                    alt="Nilo Peçanha">
+                                <div class="card-body">
+                                    <h5 class="card-title">Nilo Peçanha</h5>
+                                    <small class="text-muted">1867 - 1924</small>
+                                    <p class="card-text">Político e advogado, foi Presidente do Brasil (1909-1910).
+                                        Primeiro presidente afrodescendente do país.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <img src="img/personalidades/lima_barreto.png" class="card-img-top category-image"
+                                    alt="Lima Barreto">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lima Barreto</h5>
+                                    <small class="text-muted">1881 - 1922</small>
+                                    <p class="card-text">Escritor pré-modernista, autor de "Triste Fim de Policarpo
+                                        Quaresma". Retratou a realidade social do Rio de Janeiro.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <img src="img/personalidades/pixinguinha.jpg" class="card-img-top category-image"
+                                    alt="Pixinguinha">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pixinguinha</h5>
+                                    <small class="text-muted">1897 - 1973</small>
+                                    <p class="card-text">Compositor e instrumentista, um dos criadores do choro
+                                        brasileiro. Revolucionou a música popular brasileira.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <img src="img/personalidades/cartola.jpeg" class="card-img-top category-image"
+                                    alt="Cartola">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cartola</h5>
+                                    <small class="text-muted">1908 - 1980</small>
+                                    <p class="card-text">Compositor e cantor, um dos maiores nomes do samba brasileiro.
+                                        Fundador da escola de samba Estação Primeira de Mangueira.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <img src="img/personalidades/otelo.png" class="card-img-top category-image"
+                                    alt="Grande Otelo">
+                                <div class="card-body">
+                                    <h5 class="card-title">Grande Otelo</h5>
+                                    <small class="text-muted">1915 - 1993</small>
+                                    <p class="card-text">Ator e humorista, pioneiro do cinema e TV brasileiros. Parceiro
+                                        de Oscarito em várias chanchadas clássicas.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <img src="img/personalidades/milton_santos.png" class="card-img-top category-image"
+                                    alt="Milton Santos">
+                                <div class="card-body">
+                                    <h5 class="card-title">Milton Santos</h5>
+                                    <small class="text-muted">1926 - 2001</small>
+                                    <p class="card-text">Geógrafo baiano, único brasileiro a receber o Prêmio Vautrin
+                                        Lud. Renovador da geografia humana.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <img src="img/personalidades/bezerra_silva.jpeg" class="card-img-top category-image"
+                                    alt="Bezerra da Silva">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bezerra da Silva</h5>
+                                    <small class="text-muted">1927 - 2005</small>
+                                    <p class="card-text">Cantor e compositor, conhecido como "Embaixador da
+                                        Malandragem". Retratou a realidade dos morros cariocas.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <img src="img/personalidades/pele.jpg" class="card-img-top category-image" alt="Pelé">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pelé</h5>
+                                    <small class="text-muted">1940 - 2022</small>
+                                    <p class="card-text">Maior jogador de futebol de todos os tempos. Tricampeão
+                                        mundial, embaixador do futebol brasileiro no mundo.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <img src="img/personalidades/gloria_maria.jpg" class="card-img-top category-image"
+                                    alt="Glória Maria">
+                                <div class="card-body">
+                                    <h5 class="card-title">Glória Maria</h5>
+                                    <small class="text-muted">1949 - 2022</small>
+                                    <p class="card-text">Jornalista e apresentadora pioneira. Uma das primeiras mulheres
+                                        negras a apresentar telejornais no Brasil.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <img src="img/personalidades/benedita_silva.jpg" class="card-img-top category-image"
+                                    alt="Benedita da Silva">
+                                <div class="card-body">
+                                    <h5 class="card-title">Benedita da Silva</h5>
+                                    <small class="text-muted">1942</small>
+                                    <p class="card-text">Política e assistente social. Primeira mulher negra eleita
+                                        senadora e vice-governadora do Rio de Janeiro.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <img src="img/personalidades/gilbero_gil.jpg" class="card-img-top category-image"
+                                    alt="Gilberto Gil">
+                                <div class="card-body">
+                                    <h5 class="card-title">Gilberto Gil</h5>
+                                    <small class="text-muted">1942</small>
+                                    <p class="card-text">Cantor, compositor e ex-ministro da Cultura. Um dos criadores
+                                        do Tropicalismo, movimento que revolucionou a MPB.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <img src="img/personalidades/milton_nascimento.jpeg" class="card-img-top category-image"
+                                    alt="Milton Nascimento">
+                                <div class="card-body">
+                                    <h5 class="card-title">Milton Nascimento</h5>
+                                    <small class="text-muted">1942</small>
+                                    <p class="card-text">Cantor e compositor mineiro, um dos maiores nomes da MPB.
+                                        Conhecido por sua voz única e composições emocionantes.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <img src="img/personalidades/tim_maia.jpg" class="card-img-top category-image"
+                                    alt="Tim Maia">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tim Maia</h5>
+                                    <small class="text-muted">1942 - 1998</small>
+                                    <p class="card-text">Cantor e compositor, introdutor do soul e funk no Brasil.
+                                        Conhecido por sucessos como "Racional" e "Gostava Tanto de Você".</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <img src="img/personalidades/djavan.jpg" class="card-img-top category-image"
+                                    alt="Djavan">
+                                <div class="card-body">
+                                    <h5 class="card-title">Djavan</h5>
+                                    <small class="text-muted">1949</small>
+                                    <p class="card-text">Cantor e compositor alagoano. Um dos maiores nomes da MPB,
+                                        conhecido por sucessos como "Flôr de Lis" e "Oceano".</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <img src="img/personalidades/marina_silva.jpg" class="card-img-top category-image"
+                                    alt="Marina Silva">
+                                <div class="card-body">
+                                    <h5 class="card-title">Marina Silva</h5>
+                                    <small class="text-muted">1958</small>
+                                    <p class="card-text">Política e ambientalista. Ex-ministra do Meio Ambiente,
+                                        defensora da sustentabilidade e dos direitos dos povos da floresta.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <img src="img/personalidades/seu_jorge.png" class="card-img-top category-image"
+                                    alt="Seu Jorge">
+                                <div class="card-body">
+                                    <h5 class="card-title">Seu Jorge</h5>
+                                    <small class="text-muted">1970</small>
+                                    <p class="card-text">Cantor, compositor e ator. Conhecido pela trilha sonora de
+                                        "Cidade de Deus" e por suas interpretações de David Bowie.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <img src="img/personalidades/lazaro_ramos.jpg" class="card-img-top category-image"
+                                    alt="Lázaro Ramos">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lázaro Ramos</h5>
+                                    <small class="text-muted">1978</small>
+                                    <p class="card-text">Ator, diretor e escritor. Protagonista de importantes filmes e
+                                        novelas, ativista pelos direitos da população negra.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <img src="img/personalidades/tais_araujo.jpg" class="card-img-top category-image"
+                                    alt="Taís Araújo">
+                                <div class="card-body">
+                                    <h5 class="card-title">Taís Araújo</h5>
+                                    <small class="text-muted">1979</small>
+                                    <p class="card-text">Atriz e apresentadora. Primeira atriz negra a protagonizar uma
+                                        novela da Rede Globo no horário nobre.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <img src="img/personalidades/daiane_santos.jpg" class="card-img-top category-image"
+                                    alt="Daiane dos Santos">
+                                <div class="card-body">
+                                    <h5 class="card-title">Daiane dos Santos</h5>
+                                    <small class="text-muted">1983</small>
+                                    <p class="card-text">Ginasta medalhista mundial. Primeira brasileira a conquistar
+                                        medalha de ouro em um Mundial de ginástica artística.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <img src="img/personalidades/racionais.jpg" class="card-img-top category-image"
+                                    alt="Racionais MC's">
+                                <div class="card-body">
+                                    <h5 class="card-title">Racionais MC's</h5>
+                                    <small class="text-muted">Formado em 1988</small>
+                                    <p class="card-text">Grupo de rap paulistano, referência no hip-hop nacional.
+                                        Retrata a realidade da periferia com letras conscientes e críticas sociais.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+        <!-- RODAPÉ -->
+        <footer class="row">
+            <div class="col-12 bg-dark text-light text-center py-3">
+                <p class="mb-0">&copy; 2025 AfroMemória. Preservando e celebrando nossa herança cultural.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="javascript/jquery-3.7.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="javascript/script.js"></script>
+</body>
+
+</html>

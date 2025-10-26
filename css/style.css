@@ -1,0 +1,248 @@
+/* === ESTILOS GLOBAIS === */
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+p, li {
+    line-height: 1.7;
+}
+
+.area {
+    padding: 0;
+}
+
+img {
+    width: 80%;
+}
+
+/* Aumentar tamanho das letras dos menus */
+.navbar-nav .nav-link {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+/* Ajustar tamanho da logo */
+.navbar-brand img {
+    height: 70px;
+    width: auto;
+}
+
+/* Personalização das setas do carrossel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #343a40;
+    /* Cor escura igual ao menu/rodapé */
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+    background-color: #23272b;
+    /* Cor mais escura no hover */
+}
+
+/* Imagens do carrossel */
+.carousel-image {
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Foto do Milton Santos */
+.milton-santos-photo {
+    max-width: 150px;
+}
+
+/* Efeito de zoom nos cards */
+.card-zoom {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.card-zoom:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Efeito suave nos emojis */
+.emoji-hover {
+    transition: transform 0.3s ease;
+}
+
+.card-zoom:hover .emoji-hover {
+    transform: scale(1.1);
+}
+
+/* Emojis grandes */
+.emoji-large {
+    font-size: 3rem;
+}
+
+/* Emojis médios */
+.emoji-medium {
+    font-size: 2.5rem;
+}
+
+/* Timeline */
+.timeline-item {
+    border-left: 3px solid #343a40;
+    padding-left: 20px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: 10px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #343a40;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, #343a40 0%, #6c757d 100%);
+    color: white;
+    padding: 60px 0;
+}
+
+.stats-card {
+    transition: transform 0.3s ease;
+}
+
+.stats-card:hover {
+    transform: translateY(-5px);
+}
+
+.team-card {
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.team-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagens de categoria (espiritualidade, ritmos) */
+.category-image {
+    height: 280px;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease;
+    border-radius: 0.25rem 0.25rem 0 0;
+}
+
+.category-image:hover {
+    transform: scale(1.02);
+}
+
+/* Filtro de categoria */
+.category-filter {
+    max-width: 200px;
+}
+
+/* Responsividade para imagens */
+@media (max-width: 768px) {
+    .category-image {
+        height: 220px;
+    }
+}
+
+@media (max-width: 576px) {
+    .category-image {
+        height: 200px;
+    }
+}
+
+/* === MELHORIAS DE ACESSIBILIDADE E BOAS PRÁTICAS === */
+
+/* Melhorar contraste dos links */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Focar nos elementos interativos */
+.btn:focus,
+.form-control:focus,
+.form-select:focus {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Melhorar legibilidade */
+body {
+    line-height: 1.6;
+}
+
+p, li {
+    line-height: 1.7;
+}
+
+/* Indicador visual para elementos clicáveis */
+.card-zoom,
+.stats-card,
+.team-card {
+    cursor: pointer;
+}
+
+.card-zoom:focus,
+.stats-card:focus,
+.team-card:focus {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+}
+
+/* Animações respeitam preferências de acessibilidade */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Melhorar contraste dos botões */
+.btn-primary {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn-primary:hover {
+    background-color: #004085;
+    border-color: #004085;
+}
+
+/* Classes antigas - manter por compatibilidade mas adicionar comentário */
+/* DEPRECATED: Considerar remover em versões futuras */
+.cor1 {
+    background-color: #ffcc88;
+    text-align: justify;
+    color: blue;
+}
+
+.cor2 {
+    background-color: #ccff88;
+}
+
+.cor3 {
+    background-color: #bb88cc;
+}

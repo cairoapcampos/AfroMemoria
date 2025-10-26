@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sabores - AfroMemória | Culinária e gastronomia afro-brasileira" />
+    <meta name="keywords" content="culinária afro-brasileira, gastronomia, receitas, tradições culinárias" />
+    <meta name="author" content="AfroMemória" />
+
+    <!-- Favicons modernos -->
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
+
+    <title>Sabores - AfroMemória | Culinária Afro-Brasileira</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="AfroMemória" height="50" class="d-inline-block align-top">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu"
+                aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="historia.html">História</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="personalidades.html">Personalidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lingua.html">Língua</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="sabores.html">Sabores <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ritmos.html">Ritmos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="espiritualidade.html">Espiritualidade</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="colabore.html">Colabore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- FIM DA NAVBAR -->
+
+    <div class="container-fluid">
+
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main class="row area">
+            <div class="col-12 bg-light p-4">
+                <div class="container">
+                    <h1 class="mb-4 text-center">Sabores Afro-Brasileiros</h1>
+                    <p class="lead text-center mb-4">Conheça os sabores que contam a história do povo africano no Brasil
+                    </p>
+
+                    <!-- Controle de Filtro -->
+                    <div class="row justify-content-center mb-4">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="form-group d-flex align-items-center justify-content-center">
+                                <label for="categoryFilterSabores" class="font-weight-bold mb-0 mr-3">Filtrar
+                                    por:</label>
+                                <select id="categoryFilterSabores" class="form-control category-filter">
+                                    <option value="all">Todos</option>
+                                    <option value="doces">Doces</option>
+                                    <option value="salgados">Salgados</option>
+                                    <option value="bebidas">Bebidas</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="saboresContainer" class="row">
+                        <div class="col-md-4 mb-4" data-category="salgados">
+                            <div class="card h-100">
+                                <img src="img/sabores/acaraje.jpg" class="card-img-top category-image" alt="Acarajé">
+                                <div class="card-body">
+                                    <h5 class="card-title">Acarajé</h5>
+                                    <p class="card-text">Patrimônio cultural da Bahia, herança direta das tradições
+                                        iorubás. Bolinho de feijão-fradinho frito no dendê.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4" data-category="salgados">
+                            <div class="card h-100">
+                                <img src="img/sabores/angu.jpg" class="card-img-top category-image" alt="Angu">
+                                <div class="card-body">
+                                    <h5 class="card-title">Angu</h5>
+                                    <p class="card-text">Prato de origem africana feito com fubá de milho, base da
+                                        alimentação popular brasileira.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4" data-category="salgados">
+                            <div class="card h-100">
+                                <img src="img/sabores/bobo-de-camarao.jpg" class="card-img-top category-image"
+                                    alt="Bobó de Camarão">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bobó de Camarão</h5>
+                                    <p class="card-text">Prato afro-baiano com camarões e purê de mandioca temperado com
+                                        dendê e leite de coco.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4" data-category="bebidas">
+                            <div class="card h-100">
+                                <img src="img/sabores/cachaca.jpeg" class="card-img-top category-image" alt="Cachaça">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cachaça</h5>
+                                    <p class="card-text">Bebida nacional brasileira, produzida nos engenhos com técnicas
+                                        trazidas pelos africanos.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4" data-category="doces">
+                            <div class="card h-100">
+                                <img src="img/sabores/canjica_munguza.png" class="card-img-top category-image"
+                                    alt="Canjica/Mungunzá">
+                                <div class="card-body">
+                                    <h5 class="card-title">Canjica/Mungunzá</h5>
+                                    <p class="card-text">Doce de milho com leite de coco, canela e amendoim, típico das
+                                        festas juninas afro-brasileiras.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4" data-category="doces">
+                            <div class="card h-100">
+                                <img src="img/sabores/cocada.jpg" class="card-img-top category-image" alt="Cocada">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cocada</h5>
+                                    <p class="card-text">Doce tradicional afro-brasileiro feito com coco ralado e
+                                        açúcar, patrimônio das quituteiras.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4" data-category="salgados">
+                            <div class="card h-100">
+                                <img src="img/sabores/cuscuz.jpg" class="card-img-top category-image" alt="Cuscuz">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cuscuz</h5>
+                                    <p class="card-text">Herança da culinária africana, feito com flocos de milho e
+                                        muito popular no Nordeste brasileiro.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4" data-category="salgados">
+                            <div class="card h-100">
+                                <img src="img/sabores/feijoada.jpg" class="card-img-top category-image" alt="Feijoada">
+                                <div class="card-body">
+                                    <h5 class="card-title">Feijoada</h5>
+                                    <p class="card-text">O prato mais emblemático da culinária brasileira, com raízes na
+                                        tradição africana. Feita com feijão preto e diversas carnes.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4" data-category="doces">
+                            <div class="card h-100">
+                                <img src="img/sabores/pamonha.jpg" class="card-img-top category-image" alt="Pamonha">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pamonha</h5>
+                                    <p class="card-text">Iguaria de milho verde envolvida na palha, tradição que une
+                                        heranças indígenas e africanas.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4" data-category="doces">
+                            <div class="card h-100">
+                                <img src="img/sabores/pe-de-moleque.jpg" class="card-img-top category-image"
+                                    alt="Pé de Moleque">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pé de Moleque</h5>
+                                    <p class="card-text">Doce tradicional feito com amendoim e rapadura, criação das
+                                        cozinheiras afro-brasileiras.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4" data-category="doces">
+                            <div class="card h-100">
+                                <img src="img/sabores/quindin.png" class="card-img-top category-image" alt="Quindim">
+                                <div class="card-body">
+                                    <h5 class="card-title">Quindim</h5>
+                                    <p class="card-text">Doce afro-brasileiro feito com coco, açúcar e gemas, criação
+                                        das cozinheiras nas casas-grandes.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4" data-category="salgados">
+                            <div class="card h-100">
+                                <img src="img/sabores/vatapa.png" class="card-img-top category-image" alt="Vatapá">
+                                <div class="card-body">
+                                    <h5 class="card-title">Vatapá</h5>
+                                    <p class="card-text">Cremoso e saboroso, representa a fusão de ingredientes
+                                        africanos e brasileiros. Feito com pão, leite de coco e dendê.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </main>
+    </div>
+
+    <div class="container-fluid">
+        <!-- RODAPÉ -->
+        <footer class="row">
+            <div class="col-12 bg-dark text-light text-center py-3">
+                <p class="mb-0">&copy; 2025 AfroMemória. Preservando e celebrando nossa herança cultural.</p>
+            </div>
+        </footer>
+    </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="javascript/jquery-3.7.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="javascript/script.js"></script>
+</body>
+
+</html>
