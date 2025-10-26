@@ -1,5 +1,17 @@
 # AfroMemória - Celebrando a cultura afro-brasileira
 
+## Rodando o Projeto
+
+1. Clone este repositório:
+
+git clone https://github.com/cairoapcampos/AfroMemoria.git
+
+2. Entre na pasta do projeto:
+
+cd AfroMemoria
+
+3. Abra o arquivo `index.html` no navegador.
+
 ## 📋 Visão Geral
 Site dedicado à preservação e divulgação da cultura afro-brasileira, desenvolvido seguindo as melhores práticas de desenvolvimento web moderno.
 
@@ -99,36 +111,3 @@ Site dedicado à preservação e divulgação da cultura afro-brasileira, desenv
 - Componentes utilizados corretamente
 - Grid system implementado
 - Classes responsivas aplicadas
-
-## 🔮 Melhorias Futuras Recomendadas
-
-### 🚀 **Performance**
-- [ ] Implementar lazy loading para imagens
-- [ ] Adicionar compressão de imagens
-- [ ] Implementar Service Workers (PWA)
-- [ ] Otimizar carregamento de fonts
-
-### 📊 **Analytics**
-- [ ] Implementar Google Analytics
-- [ ] Métricas de performance
-- [ ] Tracking de interações
-
-### 🎨 **UX/UI**
-- [ ] Modo escuro/claro
-- [ ] Animações mais elaboradas
-- [ ] Funcionalidade de busca textual
-- [ ] Compartilhamento em redes sociais
-
-### ♿ **Acessibilidade Avançada**
-- [ ] Suporte para leitores de tela
-- [ ] Navegação por skip links
-- [ ] Feedback sonoro para ações
-
-
-## 📄 Licença
-
-Este projeto é desenvolvido com fins educacionais e culturais, respeitando os direitos autorais de todas as imagens e conteúdos utilizados.
-
----
-
-**Desenvolvido com ❤️ para preservar nossa herança cultural afro-brasileira**
